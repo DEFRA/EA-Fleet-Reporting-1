@@ -32,6 +32,21 @@
           "lib/net40/ClosedXML.dll": {}
         }
       },
+      "Crystal.Reports/1.0.31": {
+        "type": "package",
+        "dependencies": {
+          "UiPath.Excel.Activities": "2.8.6",
+          "UiPath.Mail.Activities": "1.8.6",
+          "UiPath.System.Activities": "20.4.0",
+          "UiPath.UIAutomation.Activities": "20.4.2"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/Crystal Reports.dll": {}
+        }
+      },
       "CsvHelper/2.13.5": {
         "type": "package",
         "compile": {
@@ -940,6 +955,22 @@
         "lib/net40/ClosedXML.xml"
       ]
     },
+    "Crystal.Reports/1.0.31": {
+      "sha512": "vvm3cECTEg5tsOGOcg8HgVNu1igUei+vbjiiOMZ0L8UC9fklhtf7VYZ0cNvEfWAAb56f+QgaCDho3i7DVrFqNQ==",
+      "type": "package",
+      "path": "crystal.reports/1.0.31",
+      "files": [
+        ".nupkg.metadata",
+        "crystal.reports.1.0.31.nupkg.sha512",
+        "crystal.reports.nuspec",
+        "lib/net45/.settings/Release/settings-1a5b880a.json",
+        "lib/net45/.settings/Release/settings-5190454b.json",
+        "lib/net45/.settings/Release/settings-590bb27b.json",
+        "lib/net45/.settings/Release/settings-9e9290da.json",
+        "lib/net45/Crystal Reports.dll",
+        "lib/net45/project.json"
+      ]
+    },
     "CsvHelper/2.13.5": {
       "sha512": "fC8DPi/YTcZ8uXFiAeuT9EpsR2TE5cSJ2jg/4tht/Oen6az/djebpYoCQEtI33RfNrSZ533SedOknlWtUTX3fw==",
       "type": "package",
@@ -1747,6 +1778,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "Crystal.Reports >= 1.0.31 <= 1.0.31",
       "Reusable.Components >= 1.0.7 <= 1.0.7",
       "UiPath.Excel.Activities >= 2.8.6 <= 2.8.6",
       "UiPath.Mail.Activities >= 1.8.6 <= 1.8.6",
@@ -1761,13 +1793,18 @@
     "restore": {
       "projectUniqueName": "EA-Fleet-Reporting",
       "projectName": "EA-Fleet-Reporting",
-      "projectPath": "C:\\Users\\scrotty\\Documents\\UiPath\\dracoe\\EA-Fleet-Reporting\\.local",
+      "projectPath": "C:\\Users\\scrotty\\Documents\\UiPath\\dracoe\\EA-Fleet-Reporting - libraryTest Version\\.local",
       "packagesPath": "C:\\Users\\scrotty\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\scrotty\\Documents\\UiPath\\dracoe\\EA-Fleet-Reporting\\.local"
+      "outputPath": "C:\\Users\\scrotty\\Documents\\UiPath\\dracoe\\EA-Fleet-Reporting - libraryTest Version\\.local"
     },
     "frameworks": {
       "net461": {
         "dependencies": {
+          "Crystal.Reports": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.31, 1.0.31]"
+          },
           "Reusable.Components": {
             "include": "Runtime",
             "target": "Package",

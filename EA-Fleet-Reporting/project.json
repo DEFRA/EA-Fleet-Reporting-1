@@ -3,6 +3,7 @@
   "description": "Fleet Reporting Robot",
   "main": "Main.xaml",
   "dependencies": {
+    "Crystal.Reports": "[1.0.31]",
     "Reusable.Components": "[1.0.7]",
     "UiPath.Excel.Activities": "[2.8.6]",
     "UiPath.Mail.Activities": "[1.8.6]",
